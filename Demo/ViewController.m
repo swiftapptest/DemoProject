@@ -22,6 +22,8 @@
     
     // comment writen in swift account
     
+    NSLog(@"");
+    
     [self createView]; // created by app test account
     [self changeViewBGColor];
 }
