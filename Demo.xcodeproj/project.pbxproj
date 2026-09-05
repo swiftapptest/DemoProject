@@ -11,6 +11,10 @@
 		AC30E6FD1D04960A00C3470C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30E6FC1D04960A00C3470C /* AppDelegate.m */; };
 		AC30E7001D04960A00C3470C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC30E6FF1D04960A00C3470C /* ViewController.m */; };
 		69C27BC0B5B146209687D8BC /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1946E543A40979E2213F8 /* Verification.swift */; };
+		9E6A5CFC568B4E57951C60EE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00469E2E455A453FAF3E239D /* Login.swift */; };
+		C76BC2710D55486993ED7210 /* OTPVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB57634767649299A7586DF /* OTPVerification.swift */; };
+		B24965B5DA564A3184FAD107 /* VerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3DCDFA4DAD49B096F6A46B /* VerificationCode.swift */; };
+		A4D528728D194E9EAAD9008C /* SuccessAlternate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E41F40928A4186B626E139 /* SuccessAlternate.swift */; };
 		415FFC8661EA49E289865AAC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E938B1440E450198B79A85 /* HomeViewController.m */; };
 		AC30E7031D04960A00C3470C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30E7011D04960A00C3470C /* Main.storyboard */; };
 		AC30E7051D04960A00C3470C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC30E7041D04960A00C3470C /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 		AC30E6FE1D04960A00C3470C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AC30E6FF1D04960A00C3470C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7CE1946E543A40979E2213F8 /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		00469E2E455A453FAF3E239D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4AB57634767649299A7586DF /* OTPVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerification.swift; sourceTree = "<group>"; };
+		EC3DCDFA4DAD49B096F6A46B /* VerificationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCode.swift; sourceTree = "<group>"; };
+		26E41F40928A4186B626E139 /* SuccessAlternate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAlternate.swift; sourceTree = "<group>"; };
 		76433A35BD02407FA899E84A /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F4E938B1440E450198B79A85 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		AC30E7021D04960A00C3470C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +111,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FC73946C77E4405BB9EC5EAD /* OTPFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7CE1946E543A40979E2213F8 /* Verification.swift */,
+				00469E2E455A453FAF3E239D /* Login.swift */,
+				4AB57634767649299A7586DF /* OTPVerification.swift */,
+				EC3DCDFA4DAD49B096F6A46B /* VerificationCode.swift */,
+				26E41F40928A4186B626E139 /* SuccessAlternate.swift */,
+			);
+			path = OTPFlow;
+			sourceTree = "<group>";
+		};
 		AC30E6F71D04960A00C3470C /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +130,8 @@
 				AC30E6FC1D04960A00C3470C /* AppDelegate.m */,
 				AC30E6FE1D04960A00C3470C /* ViewController.h */,
 				AC30E6FF1D04960A00C3470C /* ViewController.m */,
-				7CE1946E543A40979E2213F8 /* Verification.swift */,
 				76433A35BD02407FA899E84A /* HomeViewController.h */,
+				FC73946C77E4405BB9EC5EAD /* OTPFlow */,
 				F4E938B1440E450198B79A85 /* HomeViewController.m */,
 				AC30E7011D04960A00C3470C /* Main.storyboard */,
 				AC30E7041D04960A00C3470C /* Assets.xcassets */,
@@ -280,6 +300,10 @@
 			files = (
 				AC30E7001D04960A00C3470C /* ViewController.m in Sources */,
 				69C27BC0B5B146209687D8BC /* Verification.swift in Sources */,
+				9E6A5CFC568B4E57951C60EE /* Login.swift in Sources */,
+				C76BC2710D55486993ED7210 /* OTPVerification.swift in Sources */,
+				B24965B5DA564A3184FAD107 /* VerificationCode.swift in Sources */,
+				A4D528728D194E9EAAD9008C /* SuccessAlternate.swift in Sources */,
 				415FFC8661EA49E289865AAC /* HomeViewController.m in Sources */,
 				AC30E6FD1D04960A00C3470C /* AppDelegate.m in Sources */,
 				AC30E6FA1D04960A00C3470C /* main.m in Sources */,
