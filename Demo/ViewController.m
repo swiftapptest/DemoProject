@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Demo-Swift.h"
 
 @interface ViewController ()
+
+@property (nonatomic, assign) BOOL hasPresentedOTPFlow;
 
 @end
 
@@ -28,6 +31,14 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+
+    // Present the SwiftUI OTP flow (Login -> OTP -> Verification Code -> Success)
+    // the first time this screen appears.
+    if (!self.hasPresentedOTPFlow) {
+        self.hasPresentedOTPFlow = YES;
+        UIViewController *otpFlowViewController = [SwiftUIFlowLauncher makeOTPFlowViewController];
+        [self presentViewController:otpFlowViewController animated:YES completion:nil];
+    }
 }
 
 
