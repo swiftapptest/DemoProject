@@ -16,6 +16,8 @@
 		B24965B5DA564A3184FAD107 /* VerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3DCDFA4DAD49B096F6A46B /* VerificationCode.swift */; };
 		A4D528728D194E9EAAD9008C /* SuccessAlternate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E41F40928A4186B626E139 /* SuccessAlternate.swift */; };
 		415FFC8661EA49E289865AAC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E938B1440E450198B79A85 /* HomeViewController.m */; };
+		DB7975D941694A7B96878DC5 /* OTPFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E536FBCFEE47F99E6E3F2E /* OTPFlowCoordinator.swift */; };
+		49AB6C316A4A4592872D363E /* SwiftUIFlowLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B22CF05EEC745D0A39C3BE2 /* SwiftUIFlowLauncher.swift */; };
 		AC30E7031D04960A00C3470C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30E7011D04960A00C3470C /* Main.storyboard */; };
 		AC30E7051D04960A00C3470C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC30E7041D04960A00C3470C /* Assets.xcassets */; };
 		AC30E7081D04960A00C3470C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC30E7061D04960A00C3470C /* LaunchScreen.storyboard */; };
@@ -54,6 +56,8 @@
 		26E41F40928A4186B626E139 /* SuccessAlternate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessAlternate.swift; sourceTree = "<group>"; };
 		76433A35BD02407FA899E84A /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		F4E938B1440E450198B79A85 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		13E536FBCFEE47F99E6E3F2E /* OTPFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFlowCoordinator.swift; sourceTree = "<group>"; };
+		9B22CF05EEC745D0A39C3BE2 /* SwiftUIFlowLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFlowLauncher.swift; sourceTree = "<group>"; };
 		AC30E7021D04960A00C3470C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC30E7041D04960A00C3470C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC30E7071D04960A00C3470C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				4AB57634767649299A7586DF /* OTPVerification.swift */,
 				EC3DCDFA4DAD49B096F6A46B /* VerificationCode.swift */,
 				26E41F40928A4186B626E139 /* SuccessAlternate.swift */,
+				13E536FBCFEE47F99E6E3F2E /* OTPFlowCoordinator.swift */,
+				9B22CF05EEC745D0A39C3BE2 /* SwiftUIFlowLauncher.swift */,
 			);
 			path = OTPFlow;
 			sourceTree = "<group>";
@@ -305,6 +311,8 @@
 				B24965B5DA564A3184FAD107 /* VerificationCode.swift in Sources */,
 				A4D528728D194E9EAAD9008C /* SuccessAlternate.swift in Sources */,
 				415FFC8661EA49E289865AAC /* HomeViewController.m in Sources */,
+				DB7975D941694A7B96878DC5 /* OTPFlowCoordinator.swift in Sources */,
+				49AB6C316A4A4592872D363E /* SwiftUIFlowLauncher.swift in Sources */,
 				AC30E6FD1D04960A00C3470C /* AppDelegate.m in Sources */,
 				AC30E6FA1D04960A00C3470C /* main.m in Sources */,
 			);
@@ -447,10 +455,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingProgramming.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -458,10 +468,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingProgramming.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
